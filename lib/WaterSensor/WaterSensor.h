@@ -4,7 +4,7 @@
 
     class WaterSensor{
         public:
-            void waterSensorBegin(int8_t pin = A0);
+            void begin(int8_t pin = A6);
             bool isWhaterPresent(float threshold);
             float getWaterLevel();
         private:

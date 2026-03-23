@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include "WaterSensor.h"
 
-void WaterSensor::waterSensorBegin(int8_t pin = A0){
+void WaterSensor::begin(int8_t pin = A6){
     _pin = pin;
     pinMode(_pin,INPUT);
 }

@@ -1,7 +1,7 @@
 #include "RGBLED.h"
 #include<Arduino.h>
 
-void RGBLED::RGBledBegin(int8_t pinR = 9, int8_t pinG = 10, int8_t pinB = 11){
+void RGBLED::begin(int8_t pinR = A0, int8_t pinG = A1, int8_t pinB = A2){
     _pinB = pinB;
     _pinG = pinG;
     _pinR = pinR;

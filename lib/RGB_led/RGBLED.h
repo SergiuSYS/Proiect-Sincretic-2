@@ -4,7 +4,7 @@
 
 class RGBLED{
     public:
-        void RGBledBegin(int8_t pinR = 9, int8_t pinG = 10, int8_t pinB = 11);
+        void begin(int8_t pinR = A0, int8_t pinG = A1, int8_t pinB = A2);
         void setColor(uint8_t R, uint8_t G, uint8_t B);
     private:
         int8_t _pinR;
