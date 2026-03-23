@@ -6,7 +6,6 @@
 BMP280 sensor1;
 WaterSensor sensor2;
 
-
 void setup() {
   Serial.begin(9600);
   sensor2.waterSensorBegin();

@@ -13,7 +13,7 @@ class BMP280{
         bool begin(uint8_t address = 0x76);
         void setConfig(int8_t tempSemp, int8_t pressSemp, int8_t mode, int8_t filter);
         bool read();
-        BMP280::_data forceRead();
+        // BMP280::_data forceRead(); de adaugat mai tarziu 
         BMP280::_data getData();
         float getAltitude(int16_t seaLevelHp);
 
