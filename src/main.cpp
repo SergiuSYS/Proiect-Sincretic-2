@@ -1,17 +1,17 @@
 #include <Arduino.h>
 #include <Wire.h>
 #include "BMP280.h"
+#include "WaterSensor.h"
 
-BMP280 sensor;
+BMP280 sensor1;
+WaterSensor sensor2;
+
 
 void setup() {
-    Wire.begin();
-    sensor.begin();
-    Serial.begin(9600);
+  Serial.begin(9600);
+  sensor2.waterSensorBegin();
 }
 
 void loop() {
-  sensor.read();
-  Serial.println(sensor.getData().press);
-  delay(1000);
+  Serial.println(sensor2.isWhaterPresent(300));
 }
